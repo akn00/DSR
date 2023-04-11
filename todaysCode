@@ -1,0 +1,82 @@
+
+function newMessage(message){
+        showMessage(message);
+}
+function newMessage(){
+    newMessage("this is empty message");
+    
+}
+newMessage();
+
+doubt !!!
+
+let key=10;
+function make_sec_code(value)
+{
+    function keyGenerator(){
+    let key=20;
+    console.log('in 2nd function the key is: ',key);
+    return key;
+    }
+
+    let sec_code=value*keyGenerator();
+    console.log('the global key is: ',key);
+    return sec_code;
+
+}
+
+let input=prompt('Enter a number: ');
+if(isNaN(input)){
+    
+    alert('Enter a valid number');
+    location.reload();
+}
+else{
+    showMessage(make_sec_code(input));
+    console.log(make_sec_code(input));
+}
+
+
+let person={
+    name:'Nikhil',
+    company:'avisoft',
+    showInfo:function(){
+        showMessage(this.name+' from '+this.company);
+    }
+}
+person.showInfo();
+
+//push
+const values=[1,2,3,4];
+console.log('Before push: '+values);
+values.push(1,34,2132);
+
+//pop
+console.log('After push: '+values);
+let last= values.pop();
+
+//unshift
+console.log('array: '+values+' poped value: '+last);
+let first=values.shift()
+console.log('array:'+values+' First element was : '+first);
+
+//unshift
+console.log('Before Unshift: '+values);
+values.unshift(1,345,'Nikhil',123);
+console.log('After Unshift: '+values);
+
+//slice
+const newValues=values.slice(1,6);
+console.log('slice\nold array:'+values);
+console.log('New array: '+newValues+'\n');
+
+//splice
+
+console.log('splice\nold array:'+values);
+values.splice(1,3);
+console.log('New array: '+values+'\n');
+
+//adding elements through splice at particular index
+console.log('splice\nold array:'+values);
+values.splice(3,0,'Nikhil');
+console.log('New array: '+values+'\n');
