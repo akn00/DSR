@@ -1,23 +1,13 @@
 # DSR
 
-11th april,2023 
+12th april,2023 
 
-variables 
-constant 
-error detection 
-numbers
-operators
-number  precision 
-operator precedence 
-string & string manipulation 
-oblects
-looping statements
-conditional statements
-== & === comparision
-truthy falsy
-functions 
-document object model(DOM)
-method inside objects arrays
-push pop
-shift unshift
-slice splice
+-> arrays
+         arrays searching and looping
+         arrays in the DOM
+-> Scope and hoisting
+         global Scope
+         Function Scope
+         var and hoisting
+         undeclared variables
+         strict Mode
