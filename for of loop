@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for of loop</title>
+</head>
+<body>
+<button onclick="simpleSwitch();">Simple Switch Sample</button><p></p>
+<script>
+
+function forOfLoop(){
+    //
+    let forOfLoopObj={
+        'property1':'Nikhil',
+        'property2':'Kumar',
+        property3:function abhi(){
+            return this.property1;
+        }
+    };
+
+    let forOfLoopObj1={
+        'property1':'Abhi',
+        'property2':'shah',
+        property3:function nikhil(){
+            return this.property1;
+        }
+    };
+     const arr=[forOfLoopObj,forOfLoopObj1];
+    // for( let x of forOfLoopObj){
+    //     console.log(x+' : '+forInLoopObj[x]);
+    // }
+    for (let x of arr){
+        console.log(x);
+    }
+    //this for of loop will not work as the object 
+    //forOfLoopObj is not iteratable.
+    
+    //
+};
+</script>
+</body>
+
