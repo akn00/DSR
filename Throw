@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>throw</title>
+</head>
+<body>
+<button onclick="simpleSwitch();">Simple Switch Sample</button><p></p>
+<script>
+
+function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try { 
+    if(x.trim() == "")  
+    throw {"name":"empty","message":"Input is Empty"};
+    if(isNaN(x)) 
+    throw {"name":"not a number","message":"Input is not a number"};
+    x = Number(x);
+    if(x < 5)  
+    throw {"name":"too low","message":"Input is very low"};
+    if(x > 10)   
+    throw {"name":"too high","message":"Input is very high"};
+  }
+  catch(err) {
+    message.innerHTML = err.message;
+  }
+}
+
+
+</script>
+</body>
