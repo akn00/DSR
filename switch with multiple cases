@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>switch with multiple cases</title>
+</head>
+<body>
+<button onclick="simpleSwitch();">Simple Switch Sample</button><p></p>
+<script>
+function multipleCase (){
+    let color = prompt('Enter the color: ');
+    color=color.toLowerCase();
+
+    switch(color){
+        
+        case 'red':
+        case 'pink':
+            console.log('The color class is red');
+            break;
+        case 'blue':
+        case 'light blue':
+        case 'dark blue':
+            console.log('The color class is Blue');
+            break;
+        case 'grey':
+        case 'gray':
+        case 'dark grey':
+        case 'dark gray':
+        case 'light gray':
+        case 'light grey':
+            consol.log('The color class is gray');
+            break;
+        default:
+            console.log('Unknown Color class !!!');
+            break;    
+    }
+}
+</script>
+</body>
