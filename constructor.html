@@ -1,0 +1,54 @@
+<body>
+    <button onclick="constructorExp();">Constructor</button>
+    <script>
+    'use strict';
+    let _products = [
+    {
+    productID: 680,
+    name: "HL Road Frame Black, 58",
+    productNumber: "FR-R92B-58",
+    color: "Black",
+    standardCost: 1059.31,
+    listPrice: 1431.50
+    }, 
+    {
+productID: 707,
+name: "Sport-100 Helmet, Red",
+productNumber: "HL-U509-R",
+color: "Red",
+standardCost: 13.08,
+listPrice: 34.99
+},
+{
+productID: 709,
+name: "Mountain Bike Socks, M",
+productNumber: "SO-B909-M",
+color: "White",
+standardCost: 3.3963,
+listPrice: 9.50
+}
+];
+
+function constructorExp() {
+let product = _products[0];
+let introDate = new Date();
+let strValue = new String;
+let isActive = false;
+let result;
+let value = null;
+
+console.log("_products = "+_products.constructor);
+console.log("product = "+ product.constructor);
+
+console.log("product.productID = " + product.productID.constructor);
+console.log("product.productNumber = "+ product.productNumber.constructor);
+console.log("introDate = "+ introDate.constructor);
+
+console.log("strValue = "+ strValue.constructor);
+
+console.log("isActive = " + isActive.constructor);
+console.log("constructorSample() = " + constructorExp.constructor);
+
+}
+</script>
+</body>
