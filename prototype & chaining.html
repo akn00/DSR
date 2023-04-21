@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function person(firstName,lastName){
+            this.firstName,
+            this.lastName
+        };
+        let nikk = new person('nikhil','kumar');
+        console.log( nikk.__proto__);
+        console.log('should be object ' +nikk.__proto__.__proto__);
+        console.log( 'should be null ' +nikk.__proto__.__proto__.__proto__);
+
+    </script>
+</body>
+</html>

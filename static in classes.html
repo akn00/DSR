@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+'use strict';
+(function(){
+  class Person {
+        constructor (firstName, lastName,Age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.Age = Age;
+    }
+
+    static adultAge=18;
+    get fullName(){
+        return this.firstName + ' ' +this.lastName;
+    }
+    set fullName(fullName){
+        var nameParts = fullName.split(' ');
+        this.firstName = nameParts[0];
+        this.lastName = nameParts[1];
+      }
+      isAdult(){
+        return this.Age >= 18;
+      }
+    }
+
+    console.log(Person.adultAge);
+    class Student extends Person{
+      constructor(firstName,lastName,Age){
+        super(firstName,lastName,Age);
+        this._enrolledCourses = [];
+      }
+     static fromPerson(person){
+      return new Student(person.firstName, person.lastName, person.Age);
+     }
+      enroll(courseID){
+        this._enrolledCourses.push(courseID);
+    //    console.log(courseID);
+      }
+      getCourses(){
+        return this.fullName +" 's enrolled coures are :" +this._enrolledCourses.join(' , ');
+      }
+    }
+        let Nik = new Person('Nikhil','Kumar', 21);
+        let NikStudent = Student.fromPerson(Nik);
+        console.log(NikStudent);
+})();
+
+    </script>
+</body>
+</html>
