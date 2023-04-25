@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call Function</h1>
+    <script>
+        let person1 ={name:'Abhi',age:23};
+        let person2={name:'Nikhil',age:21};
+
+        let sayHi=function(){
+            console.log("Hiii, "+this.name);
+        }
+// sayHi();
+        sayHi.call(person1);
+        sayHi.call(person2);
+        </script>
+</body>
+</html>

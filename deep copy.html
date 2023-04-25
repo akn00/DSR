@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Deep copy</h1>
+    <script>
+        let obj1={Name:'Nikhil',
+                  age:21,
+                  company:{companyName:'AviSoft', Position:'Software developer'},
+                  class:'abc',
+                  address:{state:'chandigarh',pincode:160101}
+                 };
+        
+    let solve = function(object) {
+    let res = {};
+
+    Object.keys(object).forEach(key => {
+    if (typeof object[key] === 'object') {
+      res[key] = solve(object[key]);
+    } else {
+      res[key] = object[key];
+    }
+  });
+
+  return res;
+};
+
+
+        console.log(solve(obj1));
+    </script>
+</body>
+</html>

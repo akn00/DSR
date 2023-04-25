@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Built in functions</H1>
+    <script>
+        console.log("this is eval function below:"+
+        " it take input as string and evaluates it and gives us the output.");
+        let x=1;
+        let y=2;
+        let s='nikhil';
+        console.log(eval('x+y+1'));
+        console.log(eval("x+y+s"));
+        console.log("");
+        
+        console.log("this is parseInt function below:"+
+        "which is used to convert string into number.");
+        console.log(parseInt("F",16));
+        console.log(parseInt("17",10));
+        console.log(parseInt("hisi",10));
+        console.log("");
+        
+        console.log("this is parseFloat function below:"+
+        "which is used to convert string into a floating point number.");
+        console.log(parseFloat("3.988"));
+        console.log(parseFloat("2.99e-1"));
+        console.log(parseFloat(""));
+        console.log("");
+        
+        console.log("this is escape function below:"+
+        " Which returns the hexadecimal encoding of an argument "+
+        "in the iso latin1 character set");
+        console.log(escape("text"));
+        console.log(escape(" "));
+        console.log(escape("abc&$ "));
+        console.log("");
+        
+        console.log("this is unescape function below:"+
+        " Which is just opposite of the escape function");
+        console.log(unescape("text"));
+        console.log(unescape("%20"));
+        console.log(unescape("abc%26%25"));
+        console.log("");
+        </script>
+</body>
+</html>

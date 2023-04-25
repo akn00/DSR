@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Apply Function</h1>
+    <script>
+        function introduction(name, profession){
+            console.log('my name is '+name
+            +' and my profession is '+profession+'.');
+
+        }
+
+        introduction("Nikhil","Engineer");
+        introduction.apply(undefined,["Abhi","Developer"]);
+        introduction.call(undefined,"Sunil","Govt. Emp");
+    </script>
+</body>
+</html>
