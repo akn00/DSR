@@ -1,0 +1,18 @@
+difference between object.key and object[key].
+
+let's take an example of an object'result' in foreach loop.
+here if we write :
+
+result.key='value';
+
+in here this is getting defined as a new variable 
+and not updating the existing key.
+
+so to sole solve this problem we should access the key by the
+below syntax:
+
+result[key]='value';
+
+this will not create a new key named 'key'.
+but will instead access the existing key on which we are iterarting 
+and modify that.
