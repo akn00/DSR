@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maps</h1>
+    <script>
+
+    let map = new Map();
+
+    map.set('1', 'str1');   
+    map.set(1, 'num1');     
+    map.set(true, 'bool1'); 
+
+    
+    alert( map.get(1)   ); 
+    alert( map.get('1') ); 
+
+    alert( map.size ); 
+
+    </script>
+</body>
+</html>

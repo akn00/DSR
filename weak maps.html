@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Weak maps</h1>
+    <script>
+        const m = new WeakMap();
+
+        
+        obj1 = {}
+        m.set(obj1, "Object 1");
+        obj2 = {}
+        m.set(obj2, "Object 2");
+               
+        m.delete(obj2); 
+
+        console.log(m);   
+        console.log(m.get(obj1));       
+        console.log(m.has(obj1));
+
+    </script>
+</body>
+</html>

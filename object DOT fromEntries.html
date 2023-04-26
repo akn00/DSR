@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object.fromEntries this is used to 
+        create plain objects from maps 
+        or we can say key value pairs</h1>
+
+        <script>
+
+            let map = new Map();
+            map.set('banana', 1);
+            map.set('orange', 2);
+            map.set('meat', 4);
+
+            let obj = Object.fromEntries(map.entries()); 
+            alert(obj.orange);
+
+        </script>
+</body>
+</html>

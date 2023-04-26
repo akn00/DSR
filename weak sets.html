@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Weak Sets</h1>
+    <script>
+
+        let visitedSet = new WeakSet();
+
+        let john = { name: "John" };
+        let pete = { name: "Pete" };
+        let mary = { name: "Mary" };
+
+        visitedSet.add(john); // John visited us
+        visitedSet.add(pete); // Then Pete
+        visitedSet.add(john); // John again
+        
+        alert(visitedSet.has(john)); 
+        alert(visitedSet.has(mary)); 
+        john = null;
+
+    </script>
+</body>
+</html>
