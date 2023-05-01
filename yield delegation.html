@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>yield delegation</h1>
+    <script>
+        function *gen1(){
+            yield 1;
+            yield 2;
+
+            return 4;
+
+        }
+
+        function * gen2(){
+            const val=yield* gen1()
+            yield 3;
+            yield val;
+        }
+
+        const it = gen2();
+        console.log(it,next());
+        console.log(it,next());
+        console.log(it,next());
+        console.log(it,next());
+        console.log(it,next()); 
+    </script>
+</body>
+</html>

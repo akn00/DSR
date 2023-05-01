@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>error handlling and early completion  </h1>
+    <script>
+        function* errorHandlling(){
+            try{
+                yield 1;
+                throw('this is another error')
+                yield 2;
+                yield 3;
+            }
+            catch(error){
+                console.error(error)
+            }
+        }
+
+        const errIt=errorHandlling();
+        console.log(errIt.next());
+        // errIt.throw('Error message here')
+        console.log(errIt.next());
+
+    </script>
+</body>
+</html>
