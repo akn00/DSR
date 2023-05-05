@@ -36,7 +36,23 @@ export function chain() {
 }
 
 export function chainCatch() {
+    axios.get("http://localhost:3000/orders/1").then(({data})=>{
+         axios.get(`http://localhost:3000/addresses/${data.shippingAddress}`);
     
+        
+         throw new Error("error");
+        })
+        .catch(err=>{
+            setText(err)
+            
+            throw new Error("Second error");
+        })
+        
+    .then(({data})  => {
+        setText(`city: ${data.my.city}`);
+    })
+    .catch(err=>{setText(err)});
+
 }
 
 export function final() {
