@@ -1,0 +1,34 @@
+.Temprature{
+    display: inline-block;
+  border: 1px solid rgb(117, 116, 116);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  
+  /* vertical-align: middle; */
+}
+.Temprature h1{
+    color: rgb(97, 94, 94);
+}
+.Temprature p{
+    color:lightslategrey;
+}
+.whole{
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+    /* background-color: #e8ffeb; */
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Temprature.kelvin
+.Temprature.withInput2{
+    display: inline-block;
+}
+
+.Temprature.celcius
+.Temprature.withInput1{
+    display: inline-block;
+}
