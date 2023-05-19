@@ -1,0 +1,69 @@
+
+  body {
+    background-color: rgb(238, 238, 238);
+    padding-top: 50px;
+  }
+  
+  div {
+    background-color: white;
+    margin: auto;
+    margin-top: 0px;
+    max-width: 350px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 1px rgb(124, 124, 124);
+  }
+  
+  .input {
+    width: 320px;
+    height: 50px;
+  }
+
+  input:hover {
+    border: solid 1px black;
+  }
+  
+  input {
+    transition: 0.5s;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+    /* padding: 10px; */
+    display: flex; /* Add flex display */
+    align-items: center; /* Center vertically */
+  }
+  
+  input:focus {
+    border-color: rgb(46, 46, 206);
+    outline: none; /* This line removes the default focus outline */
+    /* padding: 2px; */
+  }
+  input:focus::placeholder {
+    transform: translateY(-110%);
+    transition: 0.25s;
+    color: rgb(46, 46, 206);
+    font-size: 12px;
+  }
+  
+  .button {
+    height: 40px;
+    background-color: rgb(46, 46, 206);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
+    cursor: pointer;
+  }
+
+  #forgotPassword
+  #loginButton{
+    display: inline;
+  }
+  #forgotPassword{
+    /* padding-left: 150px; */
+    margin-left: 150px;
+    text-align: right;
+  }
+
